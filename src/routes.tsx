@@ -12,6 +12,10 @@ import ModuleChildWrapper from "./components/ModuleChildWrapper";
 import CategoryList from "./pages/admin/Category/CategoryList";
 // ----------------------- Forms -----------------------
 import CategoryForm from "./pages/admin/Category/CategoryForm";
+import ClientList from "./pages/admin/Client/ClientList";
+import ClientForm from "./pages/admin/Client/ClientForm";
+import ProductList from "./pages/admin/Product/ProductList";
+import ProductForm from "./pages/admin/Product/ProductForm";
 
 // ----------------------- Interfaces -----------------------
 interface Model {
@@ -51,6 +55,20 @@ export const models: Model[] = [
     icon: faListUl,
     component: <CategoryList />,
     form: <CategoryForm />,
+  },
+  {
+    route: "/client",
+    title: "Clientes",
+    icon: faListUl,
+    component: <ClientList />,
+    form: <ClientForm />,
+  },
+  {
+    route: "/product",
+    title: "Productos",
+    icon: faListUl,
+    component: <ProductList />,
+    form: <ProductForm />,
   },
 ];
 
